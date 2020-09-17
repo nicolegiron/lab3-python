@@ -7,14 +7,14 @@
 
 def sum_n(n):
   if n<=0:
-    return None
+    return 0
   else:
     sum = n+sum_n(n-1)
     return sum
 
 def print_n(s, n):
   if n==0:
-    return 0
+    return
   else:
     print(s)
     print_n(s, n-1)
